@@ -12,24 +12,24 @@ public class MainActivity extends AppCompatActivity {
     int lastScoreForTeamA = 0;
     int lastScoreForTeamB = 0;
 
-    public void displayForTeamA(int score){
+    public void displayForTeamA(int score) {
         TextView scoreView = findViewById(R.id.team_a_score);
         scoreView.setText(String.valueOf(score));
     }
 
-    public void displayForTeamB(int score){
+    public void displayForTeamB(int score) {
         TextView scoreView = findViewById(R.id.team_b_score);
         scoreView.setText(String.valueOf(score));
     }
 
-    public void displayForUndoA(int score){
+    public void displayForUndoA(int score) {
         TextView undoA = findViewById(R.id.button_undo_a);
-        undoA.setText(String.valueOf("undo (-" +score +")"));
+        undoA.setText(String.valueOf("undo (-" + score + ")"));
     }
 
-    public void displayForUndoB(int score){
+    public void displayForUndoB(int score) {
         TextView undoB = findViewById(R.id.button_undo_b);
-        undoB.setText(String.valueOf("undo (-" +score +")"));
+        undoB.setText(String.valueOf("undo (-" + score + ")"));
     }
 
     @Override
@@ -39,28 +39,28 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void addSixForTeamA(View view) {
-        scoreTeamA +=6;
+        scoreTeamA += 6;
         lastScoreForTeamA = 6;
         displayForTeamA(scoreTeamA);
         displayForUndoA(lastScoreForTeamA);
     }
 
     public void addThreeForTeamA(View view) {
-        scoreTeamA +=3;
+        scoreTeamA += 3;
         lastScoreForTeamA = 3;
         displayForTeamA(scoreTeamA);
         displayForUndoA(lastScoreForTeamA);
     }
 
     public void addTwoForTeamA(View view) {
-        scoreTeamA +=2;
+        scoreTeamA += 2;
         lastScoreForTeamA = 2;
         displayForTeamA(scoreTeamA);
         displayForUndoA(lastScoreForTeamA);
     }
 
     public void addOneForTeamA(View view) {
-        scoreTeamA +=1;
+        scoreTeamA += 1;
         lastScoreForTeamA = 1;
         displayForTeamA(scoreTeamA);
         displayForUndoA(lastScoreForTeamA);
@@ -74,28 +74,28 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void addSixForTeamB(View view) {
-        scoreTeamB +=6;
+        scoreTeamB += 6;
         lastScoreForTeamB = 6;
         displayForTeamB(scoreTeamB);
         displayForUndoB(lastScoreForTeamB);
     }
 
     public void addThreeForTeamB(View view) {
-        scoreTeamB +=3;
+        scoreTeamB += 3;
         lastScoreForTeamB = 3;
         displayForTeamB(scoreTeamB);
         displayForUndoB(lastScoreForTeamB);
     }
 
     public void addTwoForTeamB(View view) {
-        scoreTeamB +=2;
+        scoreTeamB += 2;
         lastScoreForTeamB = 2;
         displayForTeamB(scoreTeamB);
         displayForUndoB(lastScoreForTeamB);
     }
 
     public void addOneForTeamB(View view) {
-        scoreTeamB +=1;
+        scoreTeamB += 1;
         lastScoreForTeamB = 1;
         displayForTeamB(scoreTeamB);
         displayForUndoB(lastScoreForTeamB);
@@ -110,13 +110,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void resetScore(View view) {
         scoreTeamA = 0;
-         scoreTeamB = 0;
-         lastScoreForTeamA = 0;
-         lastScoreForTeamB = 0;
-         lastScoreForTeamA = 0;
-         lastScoreForTeamB = 0;
-         displayForTeamA(scoreTeamA);
-         displayForTeamB(scoreTeamB);
+        scoreTeamB = 0;
+        lastScoreForTeamA = 0;
+        lastScoreForTeamB = 0;
+        lastScoreForTeamA = 0;
+        lastScoreForTeamB = 0;
+        displayForTeamA(scoreTeamA);
+        displayForTeamB(scoreTeamB);
         displayForUndoA(lastScoreForTeamA);
         displayForUndoB(lastScoreForTeamB);
     }
