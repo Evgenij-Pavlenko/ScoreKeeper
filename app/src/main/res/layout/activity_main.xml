@@ -8,9 +8,11 @@
 
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="@drawable/amfussball">
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -31,6 +33,7 @@
                     android:padding="16dp"
                     android:text="Team A"
                     android:textColor="#616161"
+                    android:background="#60FFFFFF"
                     android:textSize="14sp" />
 
                 <TextView
@@ -42,6 +45,8 @@
                     android:paddingBottom="24dp"
                     android:text="0"
                     android:textColor="#000000"
+                    android:background="#60FFFFFF"
+
                     android:textSize="56sp" />
 
 
@@ -108,6 +113,7 @@
                     android:padding="16dp"
                     android:text="Team B"
                     android:textColor="#616161"
+                    android:background="#60FFFFFF"
                     android:textSize="14sp" />
 
                 <TextView
@@ -119,6 +125,8 @@
                     android:paddingBottom="24dp"
                     android:text="0"
                     android:textColor="#000000"
+                    android:background="#60FFFFFF"
+
                     android:textSize="56sp" />
 
 
